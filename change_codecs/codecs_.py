@@ -52,8 +52,3 @@ class Decode:
             filesList = [f for f in listdir(mypath) if isfile(join(mypath, f))]
             for text in filesList:
                 os.remove(mypath + text)
-
-
-d = Decode()
-mypath = './change_codecs/txt/'
-d.change_codec(mypath)
